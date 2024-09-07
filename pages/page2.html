@@ -19,12 +19,11 @@
             margin: 0;
             font-family: "Quicksand", sans-serif;
             height: 100%;
-            display: flex;
-            flex-wrap: wrap;
+
         }
 
         .the-main-container {
-            /* <!--the whole page container --> */
+            
             background: linear-gradient(to bottom,
                     rgb(187, 254, 193),
                     rgb(187, 254, 193),
@@ -36,9 +35,6 @@
             border: 1px;
             border-radius: 10px;
             border-color: blueviolet;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
 
         }
 
@@ -62,8 +58,8 @@
             align-items: center;
             border: 1px green;
             border-radius: 40px;
-            width: 70%;
-            padding: 20px;
+            width: 500px;
+            padding: 10px;
             background-color: rgba(255, 255, 255, 0.5);
             flex-direction: column;
         }
@@ -71,19 +67,19 @@
         .form-group {
             border: 1px;
             border-radius: 40px;
-            width: 100%;
+            width: 350px;
         }
 
         .second-section {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
+
         }
 
         .text-about-the-shop {
             display: flex;
             justify-items: center;
-
             align-items: center;
             flex-wrap: wrap;
         }
@@ -91,7 +87,7 @@
 
         .images-container-candy {
             display: flex;
-            justify-items: space-between;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
             flex-wrap: wrap;
@@ -116,7 +112,7 @@
 
 
                 <div class="container-fluid p-0">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="../page1.html">
                         <h1>CANDY SHOP</h1>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -134,15 +130,18 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">
+                                    <a class="nav-link active" aria-current="page" href="../page1.html">
                                         HOME
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Page 2 </a>
+                                    <a class="nav-link" href="./page2.html">Page 2</a>
+                                    <pages>
+                                        <page2></page2>
+                                        </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Page 3</a>
+                                    <a class="nav-link" href="./page3.html">Page 3</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -189,33 +188,29 @@
 
         <div class="second-section"> <!----000000----SECOND SECTION    ---------000000000----------- -->
 
-            <div class="text-about-the-shop;" style="text-align: center;">
+            <div class="text-about-the-shop;">
                 <h2>Your opinion is very important for us!</h2>
             </div>
 
             <!-- !-- ------------------------------------SIGN UP PAGE ----------------------------------->
             <div class="login-form-sign-up" style="box-shadow: 0 0 30px">
 
-
-
-
-
                 <form>
                     <div class="form-group">
                         <label for="exampleInputName">Your name</label>
-                        <input type="text" class="form-control" id="exampleInputName" >
+                        <input type="text" class="form-control" id="exampleInputName">
                     </div>
-                
+
                     <div class="form-group">
                         <label for="exampleInputOrderNumber">Order number</label>
                         <input type="text" class="form-control" id="exampleInputOrderNumber">
                     </div>
-                
+
                     <div class="form-group">
                         <label for="exampleInputEmail">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail" >
+                        <input type="email" class="form-control" id="exampleInputEmail">
                     </div>
-                
+
                     <div class="form-group">
                         <label for="categorySelect">Category</label>
                         <select class="form-control" id="categorySelect">
@@ -225,29 +220,52 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-                
+
                     <div class="form-group">
                         <label for="userFeedback">Questions/Review</label>
-                        <textarea class="form-control" id="userFeedback" rows="4" ></textarea>
+                        <textarea class="form-control" id="userFeedback" rows="4"></textarea>
                     </div>
-                
+
                     <br>
-                
+
                     <div class="login_button" style="display: flex; justify-content: center;">
-                        <button type="submit" class="btn btn-primary" style="background-color: rgb(107, 225, 250); color: darkgreen;">Send</button>
+                        <button type="submit" class="btn btn-primary"
+                            style="background-color: rgb(107, 225, 250); color: darkgreen;">Send</button>
                     </div>
                 </form>
-                
+
 
 
             </div><!---SIGN UP PAGE end -->
+
         </div><!----000000----SECOND SECTION  END -->
-
-        <br>
-        <br>
         <br>
         <br>
 
+
+
+
+        <div class="text-about-the-yummiestWay;"
+            style="display:flex; justify-content: space-around; align-items: center;  ">
+            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjlmOW0yZmVtN3pzcnBvd3M0ZDBqdzI5ank1anI4OTFhc3Fwc2JwaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kJcgmd4s14jkpCcCyt/giphy.gif"
+                alt="gif" style="border-radius: 40px;">
+            <br>
+            <br>
+
+            <h3>
+                So, let's face it: candy is the yummiest way to say “you deserve it!”
+
+            </h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     </div> <!--  main container END div -->
     <!-- bootstrap -->
