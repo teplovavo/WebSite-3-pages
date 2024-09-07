@@ -85,10 +85,16 @@
         }
 
         .text-about-the-shop {
-            
+            display: flex;
+            justify-items: center;
+
+            align-items: center;
+            flex-wrap: wrap;
         }
 
-
+        h2::before {
+            content: "🍭 ";
+        }
     </style>
 </head>
 <!-- --------------------------------------------------------------------------------->
@@ -107,7 +113,7 @@
                 </div>
 
 
-                <div class="container-fluid">
+                <div class="container-fluid p-0">
                     <a class="navbar-brand" href="#">
                         <h1>CANDY SHOP</h1>
                     </a>
@@ -161,17 +167,25 @@
                 </div>
             </nav>
         </div> <!--------------nav bar END div -->
-
+        <br>
+        <br>
 
         <img src="./images/pink-candy.webp" alt="candy bar image" style="width: 100%; box-shadow: 0 0 30px" />
-
+        <div class="text-about-the-shop;" style="text-align: center;">
+            <br>
+            <br>
+            <h2>Order the candied candy</h2>
+        </div>
 
         <br>
         <br>
-        <div class="second-section">  <!----000000----SECOND SECTION    ---------000000000----------- -->
+        <div class="second-section"> <!----000000----SECOND SECTION    ---------000000000----------- -->
 
+
+
+            <!-- !-- ------------------------------------SIGN UP PAGE -----------------------------------> 
             <div class="login-form-sign-up" style="box-shadow: 0 0 30px">
-                <!-- ------------------------------------SIGN UP PAGE ----------------------------------->
+                
                 <form>
                     <div class="form-group">
 
@@ -203,19 +217,12 @@
 
 
             </div><!---SIGN UP PAGE end -->
-        </div>
+        </div><!----000000----SECOND SECTION  END -->
 
-<div class="text-about-the-shop">
-    <h2>Order the candied candy</h4>
-    <h4>First order Promocode 10%</h2>
-
-</div>
-
-
-
-
-
-
+        <br>
+        <br>
+        <br>
+        <br>
 
 
     </div> <!--  main container END div -->
